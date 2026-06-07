@@ -56,18 +56,29 @@ Simulação com **500 motoristas** (split 50/50 entre grupo contactado e control
 
 ---
 
-## 📈 Resultados
+## 📈 Análise e Resultados
 
-### Taxa de Reativação: Contactado vs. Controle
-Motoristas que receberam contato externo apresentaram taxa de reativação **~20 pontos percentuais** acima do grupo controle, superando o critério de sucesso de 30%.
+### Gráfico 1 — Contactado vs. Não Contactado
 
-### Janela Ideal de Intervenção
-A janela **7–20 dias** concentrou a maior taxa de reativação entre os motoristas contactados — intervir cedo é significativamente mais eficaz.
+![Contactado vs Controle](graf1_contactado_vs_controle.png)
 
-### Segmento Prioritário
-**Veteranos** responderam melhor ao contato do que Recorrentes e Novos, combinando maior taxa de retorno com maior valor histórico para a plataforma.
+Motoristas que receberam contato externo apresentaram taxa de reativação **~20 pontos percentuais acima** do grupo controle — superando o critério de sucesso de 30%.
 
-![Análise de Reengajamento](reactivation_loop.png)
+---
+
+### Gráfico 2 — Reativação por Perfil de Motorista
+
+![Reativação por Perfil](graf2_reativacao_por_perfil.png)
+
+**Veteranos** respondem melhor ao contato em todos os perfis, com a maior diferença entre grupo contactado e controle. Novos motoristas apresentam a menor taxa de retorno mesmo com contato.
+
+---
+
+### Gráfico 3 — Janela Ideal de Intervenção
+
+![Janela de Intervenção](graf3_janela_intervencao.png)
+
+A janela **7–20 dias** de inatividade é a mais eficaz. A taxa de reativação cai progressivamente quanto mais tarde acontece o contato — intervir cedo é decisivo.
 
 ---
 
@@ -80,14 +91,18 @@ A janela **7–20 dias** concentrou a maior taxa de reativação entre os motori
 
 ---
 
-## ✅ Recomendação
+## ✅ Recomendação Final
 
-Priorizar contato via WhatsApp nos **primeiros 15 dias de inatividade**, começando pelo segmento **Veterano** — maior taxa de retorno e maior valor histórico para a plataforma.
+### O que os dados mostram
+Motoristas contactados via canal externo reativam significativamente mais do que os não contactados. A janela mais eficaz de intervenção é entre **7 e 20 dias de inatividade**. Motoristas veteranos respondem melhor ao contato do que novos.
+
+### Recomendação
+Priorizar o contato externo via WhatsApp nos **primeiros 15 dias de inatividade**, com mensagem personalizada por perfil. Começar pelo segmento **Veterano**, que tem maior taxa de retorno e maior valor histórico para a plataforma.
 
 ### Próximos passos
-- Validar hipótese com dados reais em coorte pequena
-- Teste A/B com duas versões de mensagem
-- Definir SLA de resposta para considerar reativação confirmada
+- [ ] Validar hipótese com dados reais de uma coorte pequena
+- [ ] Testar duas versões de mensagem (A/B) para otimizar conversão
+- [ ] Definir SLA de resposta do motorista para considerar reativação
 
 ---
 
@@ -111,8 +126,10 @@ jupyter notebook reactivation_loop.ipynb
 
 ```
 reactivation-loop/
-├── reactivation_loop.ipynb   # Análise completa com visualizações
-├── reactivation_loop.png     # Output dos gráficos
+├── reactivation_loop.ipynb            # Análise completa com visualizações
+├── graf1_contactado_vs_controle.png   # Taxa de reativação: contactado vs. controle
+├── graf2_reativacao_por_perfil.png    # Reativação por perfil de motorista
+├── graf3_janela_intervencao.png       # Janela ideal de intervenção
 └── README.md
 ```
 
